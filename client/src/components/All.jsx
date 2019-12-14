@@ -11,8 +11,10 @@ const All = ({show, handleClose}) => {
 
   return (
     <div className={styles.all_modal}>
-      <h1>All Blogs</h1>
-      <p onClick={handleClose}>Close</p>
+        <div className={styles.close} onClick={handleClose}>X</div>
+        <div className={styles.heading_text}>
+          <h1>Blogs</h1>
+        </div>
     </div>
   )
 }
