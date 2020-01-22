@@ -1,9 +1,6 @@
 import React from 'react';
-import Header from './Header.jsx';
-import Nav from './Nav.jsx';
-import Mid from './Mid.jsx';
-import Blogs from './Blogs.jsx';
-import Copyright from './Copyright.jsx';
+import All from './All.jsx';
+import Home from './Home.jsx';
 import { Switch, Route } from 'react-router-dom';
 import styles from './css/index.css';
 
@@ -16,15 +13,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className={styles.main}>
-        <Nav />
-        <Mid />
-        <Header />
-        <Blogs />
-        <div>
-          <a href="#nav"><button className={styles.back}>Back to top</button></a>
-        </div>
-        <Copyright />
+      <div>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/all" component={All} />
+        </Switch>
       </div>
     )
   }
