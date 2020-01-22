@@ -4,9 +4,9 @@ import styles from './css/index.css';
 
 const All = () => {
   return (
-    <div>
+    <div className={styles.all}>
       <Nav />
-      <h1>Blogs</h1>
+      <h1>All Blogs</h1>
     </div>
   )
 }

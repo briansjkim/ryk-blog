@@ -131,34 +131,8 @@
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-.all_modal {
-  margin: 0 auto;
-  min-width: 800px;
-  min-height: 900px;
-  background: white;
-  border: 1px solid #ccc;
-  backface-visibility: hidden;
-  background: white;
-  z-index: 10;
-}
-
-.all_modal .close {
-  position: relative;
-  color: black;
-  float: right;
-  cursor: pointer;
-  font-size: 20px;
-  width: 50px;
-  margin-top: 20px;
-  font-family: "BebasNeueLight";
-}
-
-.all_modal .heading_text {
-  margin-top: 50px;
-  font-family: "BebasNeueLight";
-}
-
-.all_modal h1 {
-  margin: 0 auto;
+.all {
+  text-align: center;
+  font-family: 'Montserrat';
 }
 
