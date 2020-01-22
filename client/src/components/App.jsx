@@ -4,7 +4,9 @@ import Nav from './Nav.jsx';
 import Mid from './Mid.jsx';
 import Blogs from './Blogs.jsx';
 import Copyright from './Copyright.jsx';
+import { Switch, Route } from 'react-router-dom';
 import styles from './css/index.css';
+
 
 class App extends React.Component {
   constructor() {
@@ -16,8 +18,8 @@ class App extends React.Component {
     return (
       <div className={styles.main}>
         <Nav />
-        <Header />
         <Mid />
+        <Header />
         <Blogs />
         <div>
           <a href="#nav"><button className={styles.back}>Back to top</button></a>
