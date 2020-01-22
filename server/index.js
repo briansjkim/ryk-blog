@@ -14,6 +14,10 @@ app.get('/api/blog', (req, res) => {
 
 });
 
+app.get('/api/allBlogs', (req, res) => {
+
+});
+
 app.post('/api/blog', (req, res) => {
 
 });
