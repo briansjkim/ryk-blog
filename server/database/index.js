@@ -35,14 +35,14 @@ module.exports = {
     })
   },
 
-  saveBlog: function (title, date, message, callback) {
+  saveBlog: function (title, date, message) {
     var newBlog = new Blog({ title, date, message });
 
-    newBlog.create({ title, date, message }, (err, result) => {
+    newBlog.save({ title, date, message }, (err, result) => {
       if (err) {
-        callback(err, null);
+        console.log('Error', err);
       } else {
-        callback(null, result);
+        console.log('Success')
       }
     })
   }
