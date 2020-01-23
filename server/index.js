@@ -11,7 +11,7 @@ app.use(bodyParser.text());
 app.use(express.static(path.join(__dirname + '/../client/dist')));
 
 
-app.get('/api/blog', (req, res) => {
+app.get('/api/blogs', (req, res) => {
 
 });
 
@@ -19,15 +19,15 @@ app.get('/api/allBlogs', (req, res) => {
 
 });
 
-app.post('/api/blog', (req, res) => {
+app.post('/api/blogs', (req, res) => {
 
 });
 
-app.put('/api/blog', (req, res) => {
+app.put('/api/blogs', (req, res) => {
 
 });
 
-app.delete('/api/blog', (req, res) => {
+app.delete('/api/blogs', (req, res) => {
 
 });
 
