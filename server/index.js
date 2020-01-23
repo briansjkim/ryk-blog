@@ -12,11 +12,11 @@ app.use(express.static(path.join(__dirname + '/../client/dist')));
 
 
 app.get('/api/blogs', (req, res) => {
-
+  db.get(req, res);
 });
 
 app.get('/api/allBlogs', (req, res) => {
-
+  db.getAll(req, res);
 });
 
 app.post('/api/blogs', (req, res) => {

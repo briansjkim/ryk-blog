@@ -20,6 +20,7 @@ class Home extends React.Component {
   componentDidMount() {
     axios.get('/api/blogs')
       .then(results => { return results.data })
+      // .then(data => console.log('Yes'))
       .then(data => {
         this.setState({ blogs: data });
       })
