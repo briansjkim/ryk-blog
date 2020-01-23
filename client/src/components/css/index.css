@@ -138,3 +138,10 @@
   font-family: 'Montserrat';
 }
 
+.all .all_mid {
+  display: flex;
+}
+
+.all .all_social {
+  float: right;
+}
