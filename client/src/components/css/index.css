@@ -78,20 +78,13 @@
   width: 950px;
   margin-top: 100px;
   margin-left: 50px;
-  height: 850px;
+  height: 950px;
 }
 
 .image_section .image {
   height: 700px;
   width: 800px;
-  margin-top: 50px;
-}
-
-.image_section p {
-  margin-top: 20px;
-  color: #5d5d5d;
-  line-height: 1.5em;
-  font-size: 16px;
+  margin-top: 100px;
 }
 
 .social_section {
@@ -118,12 +111,12 @@
 }
 
 .blogs {
-  border: 1px solid black;
+  margin-top: 200px;
+  display: flex;
 }
 
 .blogs .blogs_section {
-  border: 1px solid black;
-  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .blog_section {
@@ -146,7 +139,7 @@
 }
 
 .blog_section .blog_message_section {
-  width: 60%;
+  width: 50%;
 }
 
 .blog_section .blog_message {
@@ -155,6 +148,7 @@
   height: 165px;
   overflow: hidden;
   word-wrap: break-word;
+  overflow-wrap: break-word;
   text-overflow: ellipsis;
 }
 
