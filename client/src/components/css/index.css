@@ -126,6 +126,18 @@
   margin-top: 50px;
 }
 
+.blog_section {
+  width: 50%;
+}
+
+.blog_section .blog_date {
+  letter-spacing: 1px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #b9b9b9;
+  font-family: 'geomanist', 'Helvetica Neue', Helvetica, Arial, Helvetica, sans-serif;
+}
+
 .copyright {
   margin-top: 10px;
   float: left;
