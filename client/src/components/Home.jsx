@@ -20,7 +20,7 @@ class Home extends React.Component {
   componentDidMount() {
     axios.get('/api/blogs')
       .then(results => { return results.data })
-      // .then(data => console.log('Yes'))
+      // .then(data => console.log(data))
       .then(data => {
         this.setState({ blogs: data });
       })
@@ -33,7 +33,7 @@ class Home extends React.Component {
         <Nav />
         <Header />
         <Mid />
-        <Blogs />
+        <Blogs blogs={this.state.blogs} />
         <div>
           <a href="#main"><button className={styles.back}>Back to top</button></a>
         </div>
