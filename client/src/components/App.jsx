@@ -2,7 +2,6 @@ import React from 'react';
 import All from './All.jsx';
 import Home from './Home.jsx';
 import { Switch, Route } from 'react-router-dom';
-import styles from './css/index.css';
 
 const App = () => {
   return (

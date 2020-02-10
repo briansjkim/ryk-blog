@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from './Image.jsx';
 import Social from './Social.jsx';
-import styles from './css/index.css';
+import styles from './scss/index.scss';
 
 const Mid = () => {
   return (
-    <div className={styles.mid}>
+    <div className="mid">
       <Image />
       <Social />
     </div>

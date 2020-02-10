@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './css/index.css';
+import styles from './scss/index.scss';
 
 const Nav = () => {
   return (
-    <nav className={styles.nav}>
-      <div className={styles.text_section}>
+    <nav className="nav">
+      <div className="text_section">
         <Link to="/">inspire</Link>
         <p>22 // ca -> ga -> ny</p>
       </div>

@@ -1,18 +1,17 @@
 import React from 'react';
 import Nav from './Nav.jsx';
 import Social from './Social.jsx';
-import Blogs from './Blogs.jsx';
 import Header from './Header.jsx';
-import styles from './css/index.css';
+import styles from './scss/index.scss';
 
 const All = () => {
   return (
-    <div className={styles.all}>
+    <div className="all">
       <Nav />
       <Header />
-      <div className={styles.all_mid}>
+      <div className="all_mid">
         {/* Blogs */}
-        <div className={styles.all_social}>
+        <div className="all_social">
           <Social />
         </div>
       </div>

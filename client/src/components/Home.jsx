@@ -6,7 +6,7 @@ import Blogs from './Blogs.jsx';
 import Copyright from './Copyright.jsx';
 import { Switch, Route } from 'react-router-dom';
 import axios from 'axios';
-import styles from './css/index.css';
+import styles from './scss/index.scss';
 
 class Home extends React.Component {
   constructor() {
@@ -44,13 +44,13 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div id="main" className={styles.main}>
+      <div id="main" className="main">
         <Nav />
         <Header />
         <Mid />
         <Blogs blogs={this.state.blogs} />
         <div>
-          <a href="#main"><button className={styles.back}>Back to top</button></a>
+          <a href="#main"><button className="back">Back to top</button></a>
         </div>
         <Copyright />
       </div>
