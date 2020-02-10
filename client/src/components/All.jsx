@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from './Nav.jsx';
 import Social from './Social.jsx';
+import Blogs from './Blogs.jsx';
 import Header from './Header.jsx';
 import styles from './css/index.css';
 
@@ -10,10 +11,10 @@ const All = () => {
       <Nav />
       <Header />
       <div className={styles.all_mid}>
-        {/* Blogs  */}
-        {/* <div className={styles.all_social}>
+        {/* Blogs */}
+        <div className={styles.all_social}>
           <Social />
-        </div> */}
+        </div>
       </div>
     </div>
   )

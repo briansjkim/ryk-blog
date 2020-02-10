@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const db = require('./database/index.js');
+const db = require('../database/index.js');
 var PORT = process.env.PORT || 1258;
 const app = express();
 
