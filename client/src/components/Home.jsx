@@ -46,7 +46,7 @@ class Home extends React.Component {
     return (
       <div id="main" className="main">
         <Nav />
-        <Header />
+        <Header blogs={this.state.blogs} />
         <Mid />
         <Blogs blogs={this.state.blogs} />
         <div>

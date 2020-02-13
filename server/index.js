@@ -23,10 +23,6 @@ app.post('/api/blogs', (req, res) => {
 
 });
 
-app.put('/api/blogs', (req, res) => {
-
-});
-
 app.delete('/api/blogs', (req, res) => {
 
 });

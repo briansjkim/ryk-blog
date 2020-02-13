@@ -3,10 +3,15 @@ import All from './All.jsx';
 import { Link } from 'react-router-dom';
 import styles from './scss/index.scss';
 
-const Header = () => {
+const Header = ({ blogs }) => {
   return (
     <div className="header">
-      <Link to="/all">All</Link>
+      <Link to={{
+        pathname: "/all",
+        state: {
+          blogs: blogs
+        }
+      }}>All</Link>
     </div>
   )
 }
