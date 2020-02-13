@@ -35,7 +35,7 @@ class Blog extends React.Component {
           <p className="blog_message">{this.props.blog.message}</p>
         </div>
         <p onClick={this.showModal} className="open_blog">Read More...</p>
-        <BlogModal show={this.state.show} handleClose={this.hideModal} />
+        <BlogModal blog={this.props.blog} show={this.state.show} handleClose={this.hideModal} />
       </div>
     )
   }

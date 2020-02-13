@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BlogModal = ({ show, handleClose }) => {
+const BlogModal = ({ blog, show, handleClose }) => {
   var appearHide = show ? 'modal display-block' : 'modal display-none';
 
   if (!show) {
@@ -9,7 +9,7 @@ const BlogModal = ({ show, handleClose }) => {
 
   return (
     <div className={appearHide}>
-      <h1 onClick={handleClose}>Hello</h1>
+      <h1 onClick={handleClose}>{blog.date}</h1>
     </div>
   )
 }

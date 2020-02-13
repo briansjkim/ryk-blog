@@ -139,6 +139,7 @@
 }
 
 .blog_section .blog_message_section {
+  overflow: hidden;
   width: 50%;
 
   p {
@@ -147,10 +148,6 @@
     font-size: 14px;
     line-height: 1.7em;
     height: 165px;
-    overflow: hidden;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    text-overflow: ellipsis;
   }
 }
 
