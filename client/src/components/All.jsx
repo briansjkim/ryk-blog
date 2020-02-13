@@ -6,11 +6,9 @@ import Blogs from './Blogs.jsx';
 import styles from './scss/index.scss';
 
 const All = (props) => {
-  console.log(props);
   return (
     <div className="all">
       <Nav />
-      <Header />
       <div className="all_mid">
         <Blogs blogs={props.location.state.blogs} />
         <div className="all_social">
