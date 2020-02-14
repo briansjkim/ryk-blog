@@ -1,9 +1,15 @@
 import React from 'react';
+import Social from './Social.jsx';
 
-const FullBlog = () => {
+const FullBlog = (props) => {
+  console.log(props);
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className="full-blog">
+      <h3>{props.location.state.blog.date}</h3>
+      <h1>{props.location.state.blog.title}</h1>
+      <div>
+        <p>{props.location.state.blog.message}</p>
+      </div>
     </div>
   )
 }

@@ -12,7 +12,7 @@ const Blog = ({ blog }) => {
       </div>
       <Link to={{
         pathname: '/blog',
-        state: { post: blog }
+        state: { blog: blog }
       }}>
         <p className="open_blog">Read More...</p>
       </Link>
