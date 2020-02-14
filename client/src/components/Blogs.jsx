@@ -1,6 +1,6 @@
 import React from 'react';
 import Blog from './Blog.jsx';
-import styles from './scss/index.scss';
+import './scss/index.scss';
 
 const Blogs = ({ blogs }) => {
   return (

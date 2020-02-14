@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './scss/index.scss';
+import { Link } from 'react-router-dom';
+import './scss/index.scss';
 
 const Blog = ({ blog }) => {
   return (
@@ -9,6 +10,7 @@ const Blog = ({ blog }) => {
       <div className="blog_message_section">
         <p className="blog_message">{blog.message}</p>
       </div>
+
       <p className="open_blog">Read More...</p>
     </div>
   )

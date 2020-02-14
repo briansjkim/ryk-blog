@@ -6,7 +6,7 @@ import Blogs from './Blogs.jsx';
 import Copyright from './Copyright.jsx';
 import { Switch, Route } from 'react-router-dom';
 import axios from 'axios';
-import styles from './scss/index.scss';
+import './scss/index.scss';
 
 class Home extends React.Component {
   constructor() {

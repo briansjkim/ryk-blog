@@ -1,6 +1,6 @@
 import React from 'react';
 import Social from './Social.jsx';
-import styles from './scss/index.scss';
+import './scss/index.scss';
 
 const Image = () => {
   return (

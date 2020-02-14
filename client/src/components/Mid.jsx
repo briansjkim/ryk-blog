@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from './Image.jsx';
 import Social from './Social.jsx';
-import styles from './scss/index.scss';
+import './scss/index.scss';
 
 const Mid = () => {
   return (

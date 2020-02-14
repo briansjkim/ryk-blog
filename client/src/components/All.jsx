@@ -3,7 +3,7 @@ import Nav from './Nav.jsx';
 import Social from './Social.jsx';
 import Header from './Header.jsx';
 import Blogs from './Blogs.jsx';
-import styles from './scss/index.scss';
+import './scss/index.scss';
 
 const All = (props) => {
   return (
