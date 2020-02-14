@@ -136,6 +136,13 @@
     line-height: 1.5em;
     font-size: 1.25em;
   }
+
+  a {
+    font-size: 14px;
+    color: #5d5d5d;
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
 .blog_section .blog_message_section {
@@ -149,13 +156,6 @@
     line-height: 1.7em;
     height: 165px;
   }
-}
-
-
-.blog_section .open_blog {
-  font-size: 14px;
-  color: #5d5d5d;
-  cursor: pointer;
 }
 
 .copyright {
