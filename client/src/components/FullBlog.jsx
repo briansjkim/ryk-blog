@@ -10,6 +10,7 @@ const FullBlog = (props) => {
       <div>
         <p>{props.location.state.blog.message}</p>
       </div>
+      <Social />
     </div>
   )
 }
