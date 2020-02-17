@@ -93,6 +93,7 @@
   margin-top: 100px;
   width: 300px;
   height: 100px;
+  text-align: center;
 
   i {
     padding: 10px;
@@ -180,9 +181,22 @@
 
 .full-blog .full-blog-mid {
   display: flex;
-  text-align: center;
 }
 
-// .full-blog .full-blog-mid .full-blog-details {
-//   width: 80%;
-// }
+.full-blog .full-blog-mid .full-blog-details {
+  text-align: left;
+  margin-left: 50px;
+  font-family: "BebasNeueLight";
+
+  h3 {
+    font-size: 18px;
+    color: #C0C0C0;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: 'geomanist', 'Helvetica Neue', Helvetica, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 300;
+  }
+}
