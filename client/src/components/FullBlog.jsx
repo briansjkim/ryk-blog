@@ -1,6 +1,5 @@
 import React from 'react';
 import Nav from './Nav.jsx';
-import { Link } from 'react-router-dom';
 import Social from './Social.jsx';
 import Header from './Header.jsx';
 import './scss/index.scss';
