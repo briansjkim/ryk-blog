@@ -3,6 +3,7 @@ import Header from './Header.jsx';
 import Nav from './Nav.jsx';
 import Mid from './Mid.jsx';
 import Blogs from './Blogs.jsx';
+import CreateBlog from './CreateBlog.jsx';
 import Copyright from './Copyright.jsx';
 import { Switch, Route } from 'react-router-dom';
 import axios from 'axios';
@@ -18,6 +19,7 @@ class Home extends React.Component {
 
     this.getBlogs = this.getBlogs.bind(this);
     this.getAllBlogs = this.getAllBlogs.bind(this);
+    this.createBlog = this.createBlog.bind(this);
   }
 
   componentDidMount() {
@@ -42,6 +44,10 @@ class Home extends React.Component {
       .catch((error) => console.log('Error', error));
   }
 
+  createBlog() {
+
+  }
+
   render() {
     return (
       <div id="main" className="main">
@@ -49,6 +55,7 @@ class Home extends React.Component {
         <Header blogs={this.state.blogs} />
         <Mid />
         <Blogs blogs={this.state.blogs} />
+        <CreateBlog />
         <div>
           <a href="#main"><button className="back">Back to top</button></a>
         </div>
