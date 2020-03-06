@@ -28,19 +28,15 @@ class Home extends React.Component {
 
   getBlogs() {
     axios.get('/api/blogs')
-      .then((results) => { return results.data })
-      .then((data) => {
-        this.setState({ blogs: data });
+      .then((results) => {
+        this.setState({ blogs: results.data })
       })
       .catch((error) => console.log('Error', error));
   }
 
   getAllBlogs() {
     axios.get('/api/allBlogs')
-      .then((results) => { return results.data })
-      .then((data) => {
-        console.log(data);
-      })
+      .then((results) => console.log(results.data))
       .catch((error) => console.log('Error', error));
   }
 
