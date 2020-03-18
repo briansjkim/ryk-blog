@@ -13,17 +13,8 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        use: [
-          "style-loader",
-          {
-            loader: "css-loader",
-            options: {
-              importLoaders: 1,
-              modules: true
-            }
-          }
-        ]
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!sass-loader'
       }
     ]
   },
@@ -31,3 +22,4 @@ module.exports = {
     filename: 'bundle.js',
     path: __dirname + '/client/dist'
   }
+};
