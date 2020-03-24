@@ -10,7 +10,9 @@ const All = (props) => {
     <div className="all">
       <Nav />
       <div className="all_mid">
-        <Blogs blogs={props.location.state.blogs} />
+        <div className="all_blogs">
+          <Blogs blogs={props.location.state.blogs} />
+        </div>
         <div className="all_social">
           <Social />
         </div>
