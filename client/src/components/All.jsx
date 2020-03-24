@@ -3,6 +3,7 @@ import Nav from './Nav.jsx';
 import Social from './Social.jsx';
 import Header from './Header.jsx';
 import Blogs from './Blogs.jsx';
+import CreateBlog from './CreateBlog.jsx';
 import './scss/index.scss';
 
 const All = (props) => {
@@ -16,6 +17,9 @@ const All = (props) => {
         <div className="all_social">
           <Social />
         </div>
+      </div>
+      <div>
+        <CreateBlog />
       </div>
     </div>
   )
