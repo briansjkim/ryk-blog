@@ -16,8 +16,8 @@ class CreateBlog extends React.Component {
     this.createBlogs = this.createBlogs.bind(this);
   }
 
-  handleChange() {
-
+  handleChange(e, target) {
+    this.setState({ [target]: e.target.value });
   }
 
   createBlogs(blog) {
@@ -31,10 +31,10 @@ class CreateBlog extends React.Component {
       <div className="create-blog">
         <form>
           <label>Title</label>
-          <input type="text" id="blog_title" onChange={this.handleChange} placeholder="Title" required></input>
+          <input type="text" value={this.state.title} onChange={(e) => this.handleChange(e, 'title')} placeholder="Title" required></input>
           <label>Date</label>
-          <input type="text" id="blog_date" onChange={this.handleChange} placeholder="March 25, 2020"></input>
-          <input type="text" id="blog_message" onChange={this.handleChange}></input>
+          <input type="text" value={this.state.date} onChange={(e) => this.handleChange(e, 'date')} placeholder="March 25, 2020"></input>
+          <input type="text" value={this.state.message} onChange={(e) => this.handleChange(e, 'message')}></input>
         </form>
         <button onClick={this.createBlogs}>Create</button>
       </div>
