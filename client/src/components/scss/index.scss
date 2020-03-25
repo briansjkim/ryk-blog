@@ -177,6 +177,18 @@
   display: flex;
 }
 
+.all .all_mid .all_blogs {
+  width: 75%;
+}
+
+.all .all_mid .all_social {
+  width: 25%;
+
+  div {
+    margin-left: 0px;
+  }
+}
+
 .full-blog .full-blog-mid {
   display: flex;
 }
