@@ -18,7 +18,6 @@ class Home extends React.Component {
 
     this.getBlogs = this.getBlogs.bind(this);
     this.getAllBlogs = this.getAllBlogs.bind(this);
-    this.createBlog = this.createBlog.bind(this);
   }
 
   componentDidMount() {
@@ -37,10 +36,6 @@ class Home extends React.Component {
     axios.get('/api/allBlogs')
       .then((results) => console.log(results.data))
       .catch((error) => console.log('Error', error));
-  }
-
-  createBlog() {
-    axios.post('/api/blogs')
   }
 
   render() {

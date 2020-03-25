@@ -18,9 +18,6 @@ const All = (props) => {
           <Social />
         </div>
       </div>
-      <div>
-        <CreateBlog />
-      </div>
     </div>
   )
 }
