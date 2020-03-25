@@ -10,6 +10,12 @@ class CreateBlog extends React.Component {
       date: '',
       message: ''
     }
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange() {
+
   }
 
   render() {
