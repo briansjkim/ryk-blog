@@ -40,7 +40,7 @@ class Home extends React.Component {
   }
 
   createBlog() {
-
+    axios.post('/api/blogs')
   }
 
   render() {
