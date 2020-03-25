@@ -12,9 +12,14 @@ class CreateBlog extends React.Component {
     }
 
     this.handleChange = this.handleChange.bind(this);
+    this.createBlogs = this.createBlogs.bind(this);
   }
 
   handleChange() {
+
+  }
+
+  createBlogs() {
 
   }
 
