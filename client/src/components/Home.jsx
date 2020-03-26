@@ -4,7 +4,7 @@ import Nav from './Nav.jsx';
 import Mid from './Mid.jsx';
 import Blogs from './Blogs.jsx';
 import Copyright from './Copyright.jsx';
-import { Switch, Route } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import axios from 'axios';
 import './scss/index.scss';
 
@@ -54,4 +54,4 @@ class Home extends React.Component {
   }
 }
 
-export default Home;
+export default withRouter(Home);

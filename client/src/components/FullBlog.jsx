@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from './Nav.jsx';
 import Social from './Social.jsx';
 import Header from './Header.jsx';
+import { withRouter } from 'react-router-dom';
 import './scss/index.scss';
 
 const FullBlog = (props) => {
@@ -24,4 +25,4 @@ const FullBlog = (props) => {
   )
 }
 
-export default FullBlog;
+export default withRouter(FullBlog);
