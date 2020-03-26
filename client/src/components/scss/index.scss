@@ -217,6 +217,22 @@
   }
 }
 
+.full-blog .full-blog-mid .full-blog-details .go-back {
+  p {
+    font-family: "BebasNeueLight";
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  p:hover {
+    cursor: pointer;
+    color: #C0C0C0;
+  }
+}
+
 .create-blog {
   border: 1px solid black;
 }
