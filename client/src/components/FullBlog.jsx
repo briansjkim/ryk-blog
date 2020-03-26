@@ -20,9 +20,11 @@ class FullBlog extends React.Component {
     return (
       <div className="full-blog" >
         <Nav />
-        <button onClick={this.goBack}>Go Back</button>
         <div className="full-blog-mid">
           <div className="full-blog-details">
+            <div className="go-back">
+              <p className="all-button" onClick={this.goBack}>All</p>
+            </div>
             <h3>{this.props.location.state.blog.date}</h3>
             <h1>{this.props.location.state.blog.title}</h1>
             <div>
@@ -34,7 +36,6 @@ class FullBlog extends React.Component {
           </div>
         </div>
       </div >
-
     )
   }
 }
