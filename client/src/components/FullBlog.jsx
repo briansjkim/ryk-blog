@@ -23,7 +23,7 @@ class FullBlog extends React.Component {
         <div className="full-blog-mid">
           <div className="full-blog-details">
             <div className="go-back">
-              <p className="all-button" onClick={this.goBack}>All</p>
+              <p className="all-heading" onClick={this.goBack}>All</p>
             </div>
             <h3>{this.props.location.state.blog.date}</h3>
             <h1>{this.props.location.state.blog.title}</h1>
