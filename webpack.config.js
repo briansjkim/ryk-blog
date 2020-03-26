@@ -18,8 +18,12 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    historyApiFallback: true,
+  },
   output: {
     filename: 'bundle.js',
     path: __dirname + '/client/dist',
+    publicPath: '/'
   }
 };

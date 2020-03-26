@@ -15,6 +15,14 @@ app.get('/api/blogs', (req, res) => {
   db.get(req, res);
 });
 
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/../client/dist/index.html'), (err) => {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
+
 app.get('/api/allBlogs', (req, res) => {
   db.getAll(req, res);
 });
