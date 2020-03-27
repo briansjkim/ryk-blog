@@ -1,5 +1,5 @@
 # ryk-Blog
-> An online journal for my client's thoughts, ideas, and views
+> A blog site for my client's thoughts, ideas, and views
 
 # Technologies Used
 > React (w/ React-Router), Node.js/Express, MongoDB/Mongoose, Sass 
