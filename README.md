@@ -13,4 +13,4 @@
     
 # Installing Dependencies #
   From the root directory:
-    > npm install
+   > npm install
