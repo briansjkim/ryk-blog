@@ -5,9 +5,12 @@
 > React (w/ React-Router), Node.js/Express, MongoDB/Mongoose, Sass 
 
 # Starting #
-  From the root directory, run the following commands:
-    > npm run build
-    > npm run start
+  From the root directory:
+    1. To start the client
+      > npm run build
+    2. To start the server
+      > npm run start
+    
     
 # Installing Dependencies #
   From the root directory:
