@@ -28,7 +28,7 @@ class CreateBlog extends React.Component {
 
   render() {
     return (
-      <div className="create-blog">
+      <div className="create_blog">
         <form>
           <label>Title</label>
           <input type="text" value={this.state.title} onChange={(e) => this.handleChange(e, 'title')} placeholder="Title" required></input>

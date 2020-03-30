@@ -4,7 +4,7 @@ import Social from './Social.jsx';
 import Header from './Header.jsx';
 import Blogs from './Blogs.jsx';
 import CreateBlog from './CreateBlog.jsx';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import './scss/index.scss';
 
 const All = (props) => {
@@ -17,6 +17,9 @@ const All = (props) => {
         </div>
         <div className="all_social">
           <Social />
+          <div className="create_section">
+            <Link to='/create'>Create</Link>
+          </div>
         </div>
       </div>
     </div>
