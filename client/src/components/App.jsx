@@ -2,6 +2,7 @@ import React from 'react';
 import All from './All.jsx';
 import Home from './Home.jsx';
 import FullBlog from './FullBlog.jsx';
+import CreateBlog from './CreateBlog.jsx';
 import { Switch, Route, withRouter } from 'react-router-dom';
 
 const App = () => {
@@ -16,6 +17,9 @@ const App = () => {
         </Route>
         <Route path="/blog">
           <FullBlog />
+        </Route>
+        <Route path='/create'>
+          <CreateBlog />
         </Route>
       </Switch>
     </div>
