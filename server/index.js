@@ -33,7 +33,7 @@ app.post('/api/blogs', (req, res) => {
 });
 
 app.delete('/api/blogs', (req, res) => {
-
+  db.deleteBlog(req.query, res);
 });
 
 app.listen(PORT, () => console.log(`Server connected to port: ${PORT}`));
