@@ -3,7 +3,7 @@ import axios from 'axios';
 import Nav from './Nav.jsx';
 import Header from './Header.jsx';
 import Social from './Social.jsx';
-import { Redirect } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 import './scss/index.scss';
 
 class CreateBlog extends React.Component {
@@ -14,7 +14,6 @@ class CreateBlog extends React.Component {
       title: '',
       date: '',
       message: '',
-      redirect: false,
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -26,18 +25,12 @@ class CreateBlog extends React.Component {
   }
 
   createBlogs(e) {
-    // e.preventDefault();
     let blog = this.state;
     axios.post('/api/blogs', blog)
-      .then(() => this.setState({ redirect: true }))
       .catch((error) => console.log('Error ', error))
   }
 
   render() {
-    const redirect = this.state.redirect;
-    if (redirect === true) {
-      return <Redirect to='/' />
-    }
     return (
       <div className="create">
         <div className="home-link">
@@ -53,7 +46,7 @@ class CreateBlog extends React.Component {
             <input type="text" value={this.state.date} onChange={(e) => this.handleChange(e, 'date')} placeholder="March 30, 2020" required></input>
           </div>
           <textarea className="blog-message" type="text" value={this.state.message} onChange={(e) => this.handleChange(e, 'message')} required></textarea>
-          <button className="send-blog" onClick={(e) => this.createBlogs(e)}>Create</button>
+          <Link to='/'><button className="send-blog" onClick={(e) => this.createBlogs(e)}>Create</button></Link>
         </form>
         <div className="social-link">
           <Social />
@@ -63,4 +56,4 @@ class CreateBlog extends React.Component {
   }
 }
 
-export default CreateBlog;
+export default withRouter(CreateBlog);
