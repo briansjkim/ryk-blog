@@ -15,14 +15,23 @@ class LoginPage extends React.Component {
     return (
       <form className="login">
         <div className="user-info">
-          <label>Username: </label>
-          <input type="text" required></input>
-          <br />
-          <label>Password: </label>
-          <input type="text" required></input>
+          <div className="username">
+            <label>Username: </label>
+            <input type="text" required></input>
+          </div>
+          <div className="password">
+            <label>Password: </label>
+            <input type="text" required></input>
+          </div>
+          <div className="sign-in">
+            <div className="user">
+              <Link to='/home'>Log in</Link>
+            </div>
+            <div className="guest">
+              <Link to='/home'>Guest</Link>
+            </div>
+          </div>
         </div>
-        <Link to='/home'>Log in</Link>
-        <Link to='/home'>Guest</Link>
       </form>
     )
   }
