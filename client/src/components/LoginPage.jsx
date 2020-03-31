@@ -13,11 +13,19 @@ class LoginPage extends React.Component {
 
   render() {
     return (
-      <form>
-        <p>Hello</p>
+      <form className="login">
+        <div className="user-info">
+          <label>Username: </label>
+          <input type="text" required></input>
+          <br />
+          <label>Password: </label>
+          <input type="text" required></input>
+        </div>
+        <Link to='/home'>Log in</Link>
+        <Link to='/home'>Guest</Link>
       </form>
     )
   }
 }
 
-export default LoginPage;
+export default withRouter(LoginPage);
