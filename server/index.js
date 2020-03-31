@@ -8,6 +8,7 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.text());
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname + '/../client/dist')));
 
 
@@ -28,7 +29,7 @@ app.get('/api/allBlogs', (req, res) => {
 });
 
 app.post('/api/blogs', (req, res) => {
-
+  db.saveBlog(req.body);
 });
 
 app.delete('/api/blogs', (req, res) => {
