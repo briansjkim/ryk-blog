@@ -59,10 +59,6 @@ module.exports = {
         console.log('Success');
       }
     })
-  },
-
-  modifyBlog: function (req, res) {
-    // Blog.updateOne()
   }
 };
 
