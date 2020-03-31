@@ -22,7 +22,7 @@ module.exports = {
       } else {
         res.send(data);
       }
-    }).limit(4);
+    });
   },
 
   getAll: function (req, res) {
