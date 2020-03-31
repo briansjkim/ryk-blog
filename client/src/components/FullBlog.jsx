@@ -3,7 +3,7 @@ import axios from 'axios';
 import Nav from './Nav.jsx';
 import Social from './Social.jsx';
 import Header from './Header.jsx';
-import { withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import './scss/index.scss';
 
 class FullBlog extends React.Component {
@@ -42,7 +42,10 @@ class FullBlog extends React.Component {
           <div className="full-blog-social">
             <Social />
             <div className="full-blog-delete">
-              <button onClick={this.deleteBlog} className="delete-blog">Delete</button>
+              <Link to='/'><button onClick={this.deleteBlog} className="delete-blog">Delete</button></Link>
+            </div>
+            <div>
+              <p>Edit</p>
             </div>
           </div>
         </div>
