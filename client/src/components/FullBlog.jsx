@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import Nav from './Nav.jsx';
 import Social from './Social.jsx';
 import Header from './Header.jsx';
@@ -10,6 +11,13 @@ class FullBlog extends React.Component {
     super(props);
 
     this.goBack = this.goBack.bind(this);
+    this.deleteBlog = this.deleteBlog.bind(this);
+  }
+
+  deleteBlog() {
+    axios.delete('/api/blogs', { params: this.props.location.state.blog })
+      .then(() => console.log('Success'))
+      .catch((error) => console.log('Error: ', error))
   }
 
   goBack() {
@@ -33,6 +41,9 @@ class FullBlog extends React.Component {
           </div>
           <div className="full-blog-social">
             <Social />
+            <div className="full-blog-delete">
+              <button onClick={this.deleteBlog} className="delete-blog">Delete</button>
+            </div>
           </div>
         </div>
       </div >
