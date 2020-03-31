@@ -49,6 +49,16 @@ module.exports = {
         console.log('Success')
       }
     })
+  },
+
+  deleteBlog: function (req, res) {
+    Blog.deleteOne({ title: req.title }, (err, result) => {
+      if (err) {
+        console.log('Error ', err);
+      } else {
+        console.log('Success');
+      }
+    })
   }
 };
 
