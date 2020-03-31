@@ -32,6 +32,10 @@ app.post('/api/blogs', (req, res) => {
   db.saveBlog(req.body);
 });
 
+app.patch('/api/blogs', (req, res) => {
+
+})
+
 app.delete('/api/blogs', (req, res) => {
   db.deleteBlog(req.query, res);
 });
