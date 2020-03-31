@@ -35,10 +35,14 @@ module.exports = {
     })
   },
 
-  saveBlog: function (title, date, message) {
-    var newBlog = new Blog({ title, date, message });
+  saveBlog: function (blog) {
+    var newBlog = new Blog({
+      title: blog.title,
+      date: blog.date,
+      message: blog.message
+    });
 
-    newBlog.save({ title, date, message }, (err, result) => {
+    newBlog.save((err, result) => {
       if (err) {
         console.log('Error', err);
       } else {
