@@ -1,3 +1,16 @@
+.login {
+  text-align: center;
+}
+
+.login .user-info {
+  border: 1px solid black;
+
+  label, input {
+    margin-top: 15px;
+  }
+}
+
+
 .main {
   text-align: center;
 }
