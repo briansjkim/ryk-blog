@@ -1,5 +1,8 @@
 import React from 'react';
 import axios from 'axios';
+import Nav from './Nav.jsx';
+import Header from './Header.jsx';
+import Social from './Social.jsx';
 import './scss/index.scss';
 
 class CreateBlog extends React.Component {
@@ -20,7 +23,10 @@ class CreateBlog extends React.Component {
     this.setState({ [target]: e.target.value });
   }
 
-  createBlogs(blog) {
+  createBlogs(e) {
+    e.preventDefault();
+    let blog = this.state;
+    console.log(blog);
     // axios.post('/api/blogs', blog)
     //   .then(() => console.log('Success'))
     //   .catch((error) => console.log('Error ', error))
@@ -28,15 +34,25 @@ class CreateBlog extends React.Component {
 
   render() {
     return (
-      <div className="create_blog">
-        <form>
-          <label>Title</label>
-          <input type="text" value={this.state.title} onChange={(e) => this.handleChange(e, 'title')} placeholder="Title" required></input>
-          <label>Date</label>
-          <input type="text" value={this.state.date} onChange={(e) => this.handleChange(e, 'date')} placeholder="March 25, 2020"></input>
-          <input type="text" value={this.state.message} onChange={(e) => this.handleChange(e, 'message')}></input>
+      <div className="create">
+        <div className="home-link">
+          <Nav />
+        </div>
+        <form className="create_blog">
+          <div className="blog-title">
+            <label>Title: </label>
+            <input type="text" value={this.state.title} onChange={(e) => this.handleChange(e, 'title')} placeholder="Title" required></input>
+          </div>
+          <div className="blog-date">
+            <label>Date: </label>
+            <input type="text" value={this.state.date} onChange={(e) => this.handleChange(e, 'date')} placeholder="March 30, 2020" required></input>
+          </div>
+          <textarea className="blog-message" type="text" value={this.state.message} onChange={(e) => this.handleChange(e, 'message')} required></textarea>
+          <button className="send-blog" onClick={(e) => this.createBlogs(e)}>Create</button>
         </form>
-        <button onClick={this.createBlogs}>Create</button>
+        <div className="social-link">
+          <Social />
+        </div>
       </div>
     )
   }
