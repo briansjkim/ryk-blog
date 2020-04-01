@@ -7,8 +7,17 @@ class LoginPage extends React.Component {
     super();
 
     this.state = {
-      login: false
+      username: '',
+      password: '',
+      error: false,
+      login: false,
     }
+
+    this.userLogin = this.userLogin.bind(this);
+  }
+
+  userLogin() {
+    this.setState({ login: true })
   }
 
   render() {
@@ -25,7 +34,7 @@ class LoginPage extends React.Component {
           </div>
           <div className="sign-in">
             <div className="user">
-              <Link to='/home'>Log in</Link>
+              <Link to='/home' onClick={this.userLogin}>Log in</Link>
             </div>
             <div className="guest">
               <Link to='/home'>Guest</Link>
