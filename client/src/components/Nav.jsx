@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <nav className="nav">
       <div className="text_section">
-        <Link to="/home">inspire</Link>
+        <Link to="/">inspire</Link>
         <p>22 // ca -> ga -> ny</p>
       </div>
     </nav>

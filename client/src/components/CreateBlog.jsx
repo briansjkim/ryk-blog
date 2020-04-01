@@ -46,7 +46,7 @@ class CreateBlog extends React.Component {
             <input type="text" value={this.state.date} onChange={(e) => this.handleChange(e, 'date')} placeholder="March 30, 2020" required></input>
           </div>
           <textarea className="blog-message" type="text" value={this.state.message} onChange={(e) => this.handleChange(e, 'message')} required></textarea>
-          <Link to='/home'><button className="send-blog" onClick={(e) => this.createBlogs(e)}>Create</button></Link>
+          <Link to='/'><button className="send-blog" onClick={(e) => this.createBlogs(e)}>Create</button></Link>
         </form>
         <div className="social-link">
           <Social />

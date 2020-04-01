@@ -42,7 +42,7 @@ class FullBlog extends React.Component {
           <div className="full-blog-social">
             <Social />
             <div className="full-blog-delete">
-              <Link to='/home'><button onClick={this.deleteBlog} className="delete-blog">Delete</button></Link>
+              <Link to='/'><button onClick={this.deleteBlog} className="delete-blog">Delete</button></Link>
             </div>
           </div>
         </div>

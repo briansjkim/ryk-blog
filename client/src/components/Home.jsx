@@ -9,11 +9,11 @@ import axios from 'axios';
 import './scss/index.scss';
 
 class Home extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
-      blogs: []
+      blogs: [],
     }
 
     this.getBlogs = this.getBlogs.bind(this);

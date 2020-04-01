@@ -3,7 +3,6 @@ import All from './All.jsx';
 import Home from './Home.jsx';
 import FullBlog from './FullBlog.jsx';
 import CreateBlog from './CreateBlog.jsx';
-import LoginPage from './LoginPage.jsx';
 import { Switch, Route, withRouter } from 'react-router-dom';
 
 const App = () => {
@@ -11,9 +10,6 @@ const App = () => {
     <div>
       <Switch>
         <Route path="/" exact>
-          <LoginPage />
-        </Route>
-        <Route path="/home">
           <Home />
         </Route>
         <Route path="/all">
