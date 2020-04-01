@@ -24,10 +24,6 @@ app.get('/*', (req, res) => {
   });
 });
 
-app.get('/api/allBlogs', (req, res) => {
-  db.getAll(req, res);
-});
-
 app.post('/api/blogs', (req, res) => {
   db.saveBlog(req.body);
 });
