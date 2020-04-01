@@ -25,16 +25,6 @@ module.exports = {
     }).limit(4);
   },
 
-  getAll: function (req, res) {
-    Blog.find((err, data) => {
-      if (err) {
-        res.send(err);
-      } else {
-        res.send(data);
-      }
-    })
-  },
-
   saveBlog: function (blog) {
     var newBlog = new Blog({
       title: blog.title,
