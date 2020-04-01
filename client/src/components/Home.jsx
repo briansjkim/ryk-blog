@@ -9,32 +9,19 @@ import axios from 'axios';
 import './scss/index.scss';
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       blogs: [],
     }
-
-    this.getBlogs = this.getBlogs.bind(this);
-    this.getAllBlogs = this.getAllBlogs.bind(this);
   }
 
   componentDidMount() {
-    this.getBlogs();
-  }
-
-  getBlogs() {
     axios.get('/api/blogs')
       .then((results) => {
         this.setState({ blogs: results.data })
       })
-      .catch((error) => console.log('Error', error));
-  }
-
-  getAllBlogs() {
-    axios.get('/api/allBlogs')
-      .then((results) => console.log(results.data))
       .catch((error) => console.log('Error', error));
   }
 
