@@ -2,7 +2,7 @@
 > A blog site for my client's thoughts, ideas, and views
 
 # Technologies Used
-> React (w/ React-Router), Node.js/Express, MongoDB/Mongoose, Sass 
+> React, Redux, Node.js/Express, MongoDB/Mongoose, SCSS 
 
 # Starting #
  1. From the root directory, run the following command to start the client:
