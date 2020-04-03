@@ -22,7 +22,7 @@ class Home extends React.Component {
       .then((results) => {
         this.setState({ blogs: results.data })
       })
-      .catch((error) => console.log('Error', error));
+      .catch((error) => { throw error; });
   }
 
   render() {
