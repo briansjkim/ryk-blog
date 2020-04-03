@@ -34,9 +34,7 @@ module.exports = {
 
     newBlog.save((err, result) => {
       if (err) {
-        console.log('Error', err);
-      } else {
-        console.log('Success')
+        throw err;
       }
     })
   },
@@ -44,9 +42,7 @@ module.exports = {
   deleteBlog: function (req, res) {
     Blog.deleteOne({ title: req.title }, (err, result) => {
       if (err) {
-        console.log('Error ', err);
-      } else {
-        console.log('Success');
+        throw err;
       }
     })
   }
