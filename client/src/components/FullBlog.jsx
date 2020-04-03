@@ -16,8 +16,7 @@ class FullBlog extends React.Component {
 
   deleteBlog() {
     axios.delete('/api/blogs', { params: this.props.location.state.blog })
-      .then(() => console.log('Success'))
-      .catch((error) => console.log('Error: ', error))
+      .catch((error) => { throw error; })
   }
 
   goBack() {
