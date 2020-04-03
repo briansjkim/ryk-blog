@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -d --watch",
-    "start": "nodemon server/index.js"
+    "build": "webpack --mode production",
+    "start": "forever start server/index.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "cors": "^2.8.5",
     "css-loader": "^3.4.2",
     "express": "^4.17.1",
+    "forever": "^2.0.0",
     "mongoose": "^5.9.7",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.2",
