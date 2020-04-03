@@ -128,13 +128,8 @@
   }
 }
 
-.blogs .blogs_section {
-  margin-left: 50px;
-  text-align: left;
-}
-
 .blog_section {
-  width: 50%;
+  min-width: 50%;
   max-width: 50%;
   text-align: left;
   display: inline-block;
@@ -191,7 +186,8 @@
     display: flex;
 
     .all_blogs {
-      width: 75%;
+      min-width: 75%;
+      max-width: 75%;
       text-align: left;
     }
 
