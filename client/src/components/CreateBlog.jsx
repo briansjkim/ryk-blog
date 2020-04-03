@@ -27,7 +27,7 @@ class CreateBlog extends React.Component {
   createBlogs(e) {
     let blog = this.state;
     axios.post('/api/blogs', blog)
-      .catch((error) => console.log('Error ', error))
+      .catch((error) => { throw error; })
   }
 
   render() {
