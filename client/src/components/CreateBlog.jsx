@@ -3,7 +3,7 @@ import axios from 'axios';
 import Nav from './Nav.jsx';
 import Header from './Header.jsx';
 import Social from './Social.jsx';
-import { withRouter, Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import './scss/index.scss';
 
 class CreateBlog extends React.Component {
