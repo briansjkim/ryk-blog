@@ -3,6 +3,7 @@ const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const db = require('../database/index.js');
+const mongoose = require('mongoose');
 var PORT = process.env.PORT || 1258;
 const app = express();
 
