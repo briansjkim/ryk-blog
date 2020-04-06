@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
-// mongoose.connect('mongodb://localhost/blogs', { useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connect('mongodb+srv://briaansjkim:Thebsjk58>@cluster0-awjq2.mongodb.net/test?retryWrites=true&w=majority', {
-  useNewUrlParser: true,
-  useCreateIndex: true
-});
+mongoose.connect('mongodb://localhost/blogs', { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect('mongodb+srv://briaansjkim:Thebsjk58>@cluster0-awjq2.mongodb.net/test?retryWrites=true&w=majority', {
+//   useNewUrlParser: true,
+//   useCreateIndex: true
+// });
 var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error: '));
