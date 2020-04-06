@@ -34,7 +34,7 @@ class FullBlog extends React.Component {
             </div>
             <h3>{this.props.location.state.blog.date}</h3>
             <h1>{this.props.location.state.blog.title}</h1>
-            <div>
+            <div className="full-blog-message">
               <p>{this.props.location.state.blog.message}</p>
             </div>
           </div>

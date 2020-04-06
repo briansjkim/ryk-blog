@@ -162,12 +162,12 @@
     max-width: 60%;
 
     p {
+      max-width: 1000px;
       font-family: 'geomanist', 'Helvetica Neue', Helvetica, Arial, Helvetica, sans-serif;
       color: rgb(93, 93, 93);
       font-size: 14px;
       line-height: 1.7em;
       height: 165px;
-      white-space: pre;
     }
   }
 }
@@ -211,6 +211,7 @@
     margin-left: 50px;
     font-family: "BebasNeueLight";
     line-height: 1.6;
+    max-width: 70%;
 
     h3 {
       font-size: 16px;
@@ -227,7 +228,14 @@
     p {
       font-family: 'geomanist', 'Helvetica Neue', Helvetica, Arial, Helvetica, sans-serif;
       color: #5d5d5d;
-      white-space: pre;
+    }
+
+    .full-blog-message {
+      word-wrap: break-word;
+
+      p {
+        white-space: pre-wrap;
+      }
     }
 
     .go-back {
