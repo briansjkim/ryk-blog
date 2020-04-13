@@ -2,7 +2,7 @@
 > A blog site for my client's thoughts, ideas, and views
 
 # Technologies Used
-> React, Redux, Node.js/Express, MongoDB/Mongoose, SCSS 
+> React, SCSS, Node.js/Express, MongoDB/Mongoose, AWS (S3 & EC2)
 
 # Starting #
  1. From the root directory, run the following command to start the client:
